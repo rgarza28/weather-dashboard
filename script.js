@@ -7,7 +7,7 @@ $(document).ready(function () {
 
         $("#current-weather").empty();
         $("#weather-forecast").empty();
-        $("#search").val("");
+        $("#city").val("");
 
         if (city !== "") {
 

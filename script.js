@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    //Press Enter event listener
     $("#form-submit").keypress("submit", function (event) {
         if (event.which === 13) {
             event.preventDefault()
@@ -7,6 +8,7 @@ $(document).ready(function () {
         };
     });
 
+    //Click Search event listener
     $("#search").on("click", function (event) {
         //$("#current-weather").empty();
         event.preventDefault()
@@ -50,7 +52,7 @@ $(document).ready(function () {
 
 
                 $.ajax({
-                    url: `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}`,
+                    url: `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}`,
                     method: "GET"
                 }).then(function (weatherData) {
                     console.log(weatherData);

@@ -1,4 +1,4 @@
-span {
+span#header {
 
 color: white;
 font-size: 30px;
@@ -11,10 +11,67 @@ text-indent: 15px;
 
 }
 
-.city-font-title {
+/* .city-font-title {
 
 font-size: 20px;
 
 
+} */
+#uv-index {
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    box-sizing: content-box;
 }
 
+.high {
+    background: darkred;
+    color: #fff;
+}
+
+.medium {
+    background: orange;
+    color: #fff;
+}
+
+.low {
+    background: greenyellow;
+    color: black;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.city-strong {
+   font-weight: bolder;
+}
+
+#current-weather {
+padding-left: 1%;
+padding-bottom: 1%;
+
+
+
+}
+
+#recent-searches {
+
+    color: white;
+}
+
+
+
+
+
+/* #future-container {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .five-day {
+
+display: block;
+
+} */
